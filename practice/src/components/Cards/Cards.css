@@ -1,0 +1,26 @@
+#cards {
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto; /* Make the table scrollable */
+}
+
+.horizontal-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Add background image only for the Cards page */
+#cards {
+  background-image: url('https://www.aigtechnologies.in/images/products/school-management.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif; /* Add a suitable font-family */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .horizontal-cards {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+}

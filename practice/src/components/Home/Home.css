@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* Enable scrolling */
+}
+
+.home-background {
+  background-image: url('https://www.aigtechnologies.in/images/products/school-management.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height:650px;
+ /* Set min-height to 100vh to ensure footer visibility */
+  width: 100%;
+}
+
+.nothing {
+  height: 600px;
+  width: 100%;
+}
+
+.home-container {
+  color: rgb(4, 4, 4);
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: row; /* Change to row to align sections horizontally */
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 0; /* Remove the margin-bottom to eliminate extra space */
+}
+
+.left-section {
+  flex: 1; /* Occupy the left section */
+}
+
+.logo-image {
+  max-width: 70%; /* Set a maximum width for the image */
+  height: 500px; /* Set a specific height for the image */
+  width: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure the image is a block element */
+  margin: 70px auto 0; /* Center the image horizontally and move it down by 70px */
+}
+
+.right-section {
+  flex: 1; /* Occupy the right section */
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Cursive style for the welcome heading */
+.cursive-heading {
+  font-family: 'cursive', cursive;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-right: 120px; /* Adjust the right margin to move the heading to the right */
+}
+
+.children-icon {
+  width: 80px; /* Adjust the width as needed */
+  height: auto;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.right-section strong {
+  font-weight: bold;
+}
+
+/* Go Forward Button Styles */
+.go-forward-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-forward-button:hover {
+  background-color: #45a049;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Change to column for mobile responsiveness */
+    padding: 20px;
+  }
+
+  /* Additional styles for mobile responsiveness */
+  .cursive-heading {
+    margin-bottom: 10px; /* Adjust margin for cursive heading in mobile view */
+    margin-right: 20; /* Remove right margin in mobile view */
+  }
+}
+
+
+/* Footer styling */
+footer {
+  position: sticky; /* Sticky footer to the bottom of the viewport */
+  bottom: 20px; /* Move the footer 20px up from the bottom */
+  width: 100%; /* Make the footer span the full width of the container */
+  padding: 20px; /* Add padding to make the footer more distinct */
+  background-color: #f2f2f2; /* Set a background color for the footer */
+  margin-top: -120px;
+}

@@ -1,0 +1,21 @@
+/* App.css */
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Add overflow-x to enable horizontal scrolling if needed */
+}
+
+.card-container > div {
+  margin-right: 10px; /* Adjust the spacing between cards */
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: row; /* Change flex-direction to row for mobile view */
+    overflow-x: auto; /* Add overflow-x to enable horizontal scrolling if needed */
+  }
+
+  .card-container > div {
+    margin-right: 10px; /* Adjust the spacing between cards */
+  }
+}

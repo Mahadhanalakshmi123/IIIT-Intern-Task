@@ -1,0 +1,76 @@
+/* components/PieChart/PieChart.css */
+
+.piechart-page {
+  margin: 0;
+  padding: 0;
+
+  background-image: url('https://www.aigtechnologies.in/images/products/school-management.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif; /* Add a suitable font-family */
+  height: calc(100vh - 160px); /* Adjust height to accommodate footer */
+}
+
+.piechart-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 660px;
+  /* Position the heading above the pie charts */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(10, 10, 10, 0.75); /* Semi-transparent background */
+}
+
+#piechart {
+  padding: 0px; /* Adjust the padding as needed */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Wrap pie charts to fit the page width */
+  /* Position the pie charts below the heading */
+  margin-left: 450px; /* Adjust the margin to match the header's height */
+}
+
+.chart-container {
+  /* Adjust margin-left to move the containers slightly to the right */
+  margin-left: 130px;
+  margin-right: 160px; /* Adjust margin-right to maintain overall positioning */
+  width: 32%; /* Adjust the width as needed */
+  height: auto; /* Set height to auto for responsiveness */
+  max-height: 300px; /* Set a maximum height if needed */
+  margin: 10px; /* Adjust the margins as needed */
+  border: 3px solid black; /* Border for the container */
+  border-radius: 12px; /* Optional: Add border-radius for rounded corners */
+  overflow-y: auto; /* Enable scrolling for individual pie charts */
+}
+
+/* Footer styling */
+footer {
+  position: sticky; /* Sticky footer to the bottom of the viewport */
+  bottom: 0; /* Set the bottom position to 0 to align with the container's bottom */
+  width: 100%; /* Make the footer span the full width of the container */
+  padding: 20px; /* Add padding to make the footer more distinct */
+  background-color: #f2f2f2; /* Set a background color for the footer */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .piechart-header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #piechart {
+    padding: 10px; /* Adjust the padding as needed */
+    margin-top: 60px; /* Adjust the margin to match the header's height */
+  }
+
+  .chart-container {
+    width: 100%;
+    margin: 5px; /* Adjust the margins as needed */
+  }
+}

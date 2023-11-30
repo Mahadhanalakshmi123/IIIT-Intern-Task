@@ -1,0 +1,37 @@
+/* ExtracurricularActivitiesCard.css */
+.activities-card {
+  display: inline-block;
+  vertical-align: top; /* Align to the top */
+  border: 3px solid #000; /* Black border color */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 500px; /* Fixed height */
+  background-color: #ecf0f1; /* Card background color */
+}
+
+.activities-card img {
+  width: 80%; /* Adjusted image width */
+  border-radius: 5px; /* Rounded corners for the image */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.activities-card h3 {
+  color: #333;
+}
+
+.activities-card p {
+  color: #555;
+  line-height: 1.4; /* Adjusted line height for better readability */
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .activities-card {
+    width: 100%;
+    height: auto; /* Auto height for mobile view */
+    margin: 10px 0;
+  }
+}

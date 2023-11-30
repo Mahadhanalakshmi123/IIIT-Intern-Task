@@ -1,0 +1,43 @@
+/* components/Sidebar/Sidebar.css */
+
+.sidebar {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar svg {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .sidebar {
+      margin-top: 10px;
+  }
+}
+
+nav {
+  display: none; /* Initially hide the links */
+}
+
+nav.show {
+  display: flex; /* Show the links when the 'show' class is added */
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed based on your layout */
+  left: 0;
+  background-color: #fff; /* Background color for the links */
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Add any other styles as needed */

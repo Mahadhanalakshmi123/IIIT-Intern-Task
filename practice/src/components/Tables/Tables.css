@@ -1,0 +1,56 @@
+/* Common styling for all devices */
+.tables-container {
+  padding: 20px; /* Reduce padding to minimize non-scrollable area */
+  text-align: center;
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.7oATKPrZVCBxJnUsvD4zjwHaEK&pid=Api&P=0&h=180');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: calc(95vh - 140px); /* Adjust height to accommodate the sticky footer */
+  width: 100%;
+  margin: 0; /* Remove default margin */
+  overflow-y: auto; /* Enable vertical scrolling for the table container */
+}
+
+/* Table styling */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling for table content */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 2px solid #191717;
+  padding: 10px; /* Reduce padding to fit more content within the table */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .tables-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+    table {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+    th, td {
+      min-width: 80px; /* Set a minimum width for table cells */
+    }
+  }
+}
+
+/* Footer styling */
+footer {
+  position: sticky; /* Sticky footer to the bottom of the viewport */
+  bottom: 0; /* Set the bottom position to 0 to align with the container's bottom */
+  width: 100%; /* Make the footer span the full width of the container */
+  padding: 20px; /* Add padding to make the footer more distinct */
+  background-color: #f2f2f2; /* Set a background color for the footer */
+}

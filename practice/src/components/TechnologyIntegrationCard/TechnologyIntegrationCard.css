@@ -1,0 +1,38 @@
+/* TechnologyIntegrationCard.css */
+.tech-card {
+  display: inline-block;
+  vertical-align: top; /* Align to the top */
+  border: 3px solid #000; /* Black border color */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 500px; /* Match the height with other cards */
+  background-color: #ecf0f1; /* Card background color */
+}
+
+.tech-card img {
+  width: 50%; /* Adjusted image width */
+  border-radius: 5px; /* Rounded corners for the image */
+  margin-bottom: 5px; /* Space between image and text */
+  margin-top: 5px;
+}
+
+.tech-card h3 {
+  color: #333;
+}
+
+.tech-card p {
+  color: #555;
+  line-height: 1.4; /* Adjusted line height for better readability */
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .tech-card {
+    width: 90%;
+    height: auto; /* Auto height for mobile view */
+    margin: 5px 0;
+  }
+}
